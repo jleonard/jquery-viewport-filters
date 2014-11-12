@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>page</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+      .tallboy{
+        height: 1024px;
+        background-color: #161616;
+      }
+      .shorty{
+        height: 200px;
+        background-color: #f90;
+      }
+    </style>
+
+    </head>
+    <body>
+      <main>
+        <div class='tallboy'>
+        </div>
+        <div class='shorty'></div>
+      </main>
+      <script title='jquery from cdn' src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="../src/jquery.expression.onscreen.js"></script>
+      <script>
+        $(window).on('scroll',function(e){
+          var o = $('.shorty:percentOnScreen(25)');
+          var o = $('.shorty:pixelsOnScreen(32)');
+          console.log('\n');
+          //console.log(o);
+        });
+      </script>
+   </body>
+</html>
