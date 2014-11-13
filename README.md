@@ -7,7 +7,7 @@ jquery.expression.onscreen
 var o = $('.mySelector:percentOnScreen(25)');
 ```
 
-##### Filter for elements that have >= a specific number pixels on screen;
+##### Filter for elements that have >= a specific number pixels on screen
 
 ```
 var o = $('.mySelector:pixelsOnScreen(116)');
