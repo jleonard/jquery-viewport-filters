@@ -41,7 +41,15 @@
 
     belowViewport : function(element, index, details, collection){
       return $.belowViewport(element);
-    },  
+    },
+
+    offscreenTop : function(element, index, details, collection){
+      return $.offscreenTop(element);
+    },
+
+    offscreenBottom : function(element, index, details, collection){
+      return  $.offscreenBottom(element);
+    },
 
     percentOnScreen: function( element, index, details, collection ){
       var num = parseInt(details[3],10);

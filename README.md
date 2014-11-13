@@ -17,3 +17,13 @@ var o = $('.mySelector:pixelsOnScreen(116)');
 ```
 var o = $('.mySelector:insideViewport');
 ```
+
+#### Filter for elements fully below the viewport
+```
+var o = $('.mySelector:offscreenBottom');
+```
+
+#### Filter for elements fully above the viewport
+```
+var o = $('.mySelector:offscreenTop');
+```
