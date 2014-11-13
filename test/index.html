@@ -12,9 +12,16 @@
         height: 1024px;
         background-color: #161616;
       }
-      .shorty{
+      .box{
         height: 200px;
         background-color: #f90;
+        
+      }
+      .box.active{
+        background-color: #c30;
+      }
+      .pixy.box{
+        background-color: #f42;
       }
     </style>
 
@@ -23,14 +30,19 @@
       <main>
         <div class='tallboy'>
         </div>
-        <div class='shorty'></div>
+        <div class='box pixy'></div>
+        <div class='box percenty'></div>
+        <div class='tallboy'>
+        </div>
       </main>
       <script title='jquery from cdn' src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="../src/jquery.expression.onscreen.js"></script>
       <script>
         $(window).on('scroll',function(e){
-          var o = $('.shorty:percentOnScreen(25)');
-          var o = $('.shorty:pixelsOnScreen(32)');
+          $('.box').removeClass('active');
+          var o = $('.pixy:percentOnScreen(25)').addClass('active');
+          var p = $('.pixy:pixelsOnScreen(25)').addClass('active');
+          //var o = $('.percenty:pixelsOnScreen(32)').addClass('active');
         });
       </script>
    </body>
