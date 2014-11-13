@@ -1,6 +1,8 @@
 jquery.expression.onscreen
 ==========================
 
+> jQuery selectors for filtering elements based on their *y* axis position relative to the viewport. 
+
 ##### Filter for elements that are >= a specific percentage on screen
 
 ```
